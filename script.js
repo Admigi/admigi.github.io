@@ -16,6 +16,29 @@ mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', closeMobileMenu);
 });
 
+// ── Contact form ──
+const contactForm = document.querySelector('.contact-form');
+const toast = document.getElementById('toast');
+
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = new FormData(contactForm);
+  try {
+    const res = await fetch(contactForm.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' },
+    });
+    if (res.ok) {
+      contactForm.reset();
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+  } catch (_) {
+    contactForm.submit();
+  }
+});
+
 // ── Orb scroll behavior ──
 const orbColors = {
   hero: {
@@ -51,7 +74,6 @@ function setLang(lang) {
   updateOrbColors(getCurrentSection());
 }
 
-// Restore saved language on load
 const savedLang = localStorage.getItem('lang');
 if (savedLang === 'ja') setLang('ja');
 
