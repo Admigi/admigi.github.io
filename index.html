@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clement Duval — Junior Full-Stack Developer</title>
+  <meta name="description" content="Junior Full-Stack Developer based in Tokyo. Java, Spring Boot, React, TypeScript." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#hero" class="nav-logo">CD<span>.</span></a>
+    <ul class="nav-links">
+      <li>
+        <a href="#about" data-lang="en">About</a>
+        <a href="#about" data-lang="ja">自己紹介</a>
+      </li>
+      <li>
+        <a href="#projects" data-lang="en">Projects</a>
+        <a href="#projects" data-lang="ja">制作物</a>
+      </li>
+      <li>
+        <a href="#contact" data-lang="en">Contact</a>
+        <a href="#contact" data-lang="ja">お問い合わせ</a>
+      </li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button type="button" class="lang-btn active" data-lang-btn="en" onclick="setLang('en')">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="ja" onclick="setLang('ja')">JP</button>
+      </div>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" data-lang="en">About</a><a href="#about" data-lang="ja">自己紹介</a></li>
+      <li><a href="#projects" data-lang="en">Projects</a><a href="#projects" data-lang="ja">制作物</a></li>
+      <li><a href="#contact" data-lang="en">Contact</a><a href="#contact" data-lang="ja">お問い合わせ</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span data-lang="en">Junior Full-Stack Developer</span>
+          <span data-lang="ja">ジュニアフルスタックエンジニア</span>
+        </div>
+        <h1 class="hero-name">
+          Clement<br>
+          <span class="line2">Duval</span>
+        </h1>
+        <p class="hero-desc" data-lang="en">
+          I build full-stack web applications with a passion for clean architecture and great user experiences. Based in Tokyo, open to new opportunities.
+        </p>
+        <p class="hero-desc" data-lang="ja">
+          クリーンなアーキテクチャと優れたユーザー体験にこだわり、フルスタックWebアプリケーションを構築しています。東京在住、新しい機会を探しています。
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <span data-lang="en">View my work</span>
+            <span data-lang="ja">制作物を見る</span>
+            ↓
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span data-lang="en">Get in touch</span>
+            <span data-lang="ja">お気軽にどうぞ</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-lang="en">About me</span>
+        <span class="section-label" data-lang="ja">自己紹介</span>
+        <h2 class="section-title" data-lang="en">Who I am</h2>
+        <h2 class="section-title" data-lang="ja">私について</h2>
+      </div>
+      <div class="about-grid">
+
+        <!-- Bio -->
+        <div class="about-text reveal">
+          <p data-lang="en">
+            I'm a <strong>Junior Full-Stack Developer</strong> based in Tokyo, originally from France. I've always been fascinated by Japan — the unique blend of deep tradition and cutting-edge technology — which eventually led me to make it my home.
+          </p>
+          <p data-lang="en">
+            My path into development wasn't straightforward. I first graduated from a <strong>science university</strong>, before realizing my passion for technology and computer science pushed me toward a career change. I went through a <strong>coding bootcamp</strong> where I first learned to code with Ruby, then kept going on my own — picking up Java, TypeScript, React, and everything in between.
+          </p>
+          <p data-lang="en">
+            Today I enjoy building things end-to-end: clean <strong>REST & GraphQL APIs</strong> on the backend, and thoughtful <strong>React</strong> interfaces on the frontend. I care about code quality, testing, and shipping things that actually work in production.
+          </p>
+
+          <p data-lang="ja">
+            フランス出身、現在東京在住の<strong>ジュニアフルスタックエンジニア</strong>です。日本の深い伝統と最先端テクノロジーが共存する独特の文化にずっと魅了されており、それがこの国を選んだ理由のひとつです。
+          </p>
+          <p data-lang="ja">
+            エンジニアへの道はまっすぐではありませんでした。最初は<strong>理系の大学</strong>を卒業しましたが、テクノロジーとコンピュータサイエンスへの情熱が強くなり、キャリアチェンジを決断。<strong>コーディングブートキャンプ</strong>でRubyを学び始め、その後は独学でJava・TypeScript・Reactなどを習得してきました。
+          </p>
+          <p data-lang="ja">
+            今はバックエンドのクリーンな<strong>REST・GraphQL API</strong>設計から、フロントエンドの<strong>React</strong>インターフェースまで、一貫して開発することにやりがいを感じています。コード品質・テスト・本番で動くものを届けることを大切にしています。
+          </p>
+
+          <div class="about-meta">
+            <div class="about-meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>Location</title><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span data-lang="en">Tokyo, Japan</span>
+              <span data-lang="ja">東京、日本</span>
+            </div>
+            <div class="about-meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>Languages</title><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span data-lang="en">French (native) · English (business) · Japanese (business)</span>
+              <span data-lang="ja">フランス語（母語）・英語（ビジネス）・日本語（ビジネス）</span>
+            </div>
+            <div class="about-meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>Interests</title><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01M8 12h.01M16 12h.01"/></svg>
+              <span data-lang="en">Gaming · Music · Table Tennis · Good Coffee</span>
+              <span data-lang="ja">ゲーム・音楽・卓球・コーヒー</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-grid reveal">
+          <div class="skill-category">
+            <div class="skill-category-title" data-lang="en">Languages</div>
+            <div class="skill-category-title" data-lang="ja">言語</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Ruby</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title" data-lang="en">Frameworks & Libraries</div>
+            <div class="skill-category-title" data-lang="ja">フレームワーク・ライブラリ</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Ruby on Rails</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title" data-lang="en">Databases</div>
+            <div class="skill-category-title" data-lang="ja">データベース</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title" data-lang="en">Tools & DevOps</div>
+            <div class="skill-category-title" data-lang="ja">ツール・DevOps</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-lang="en">My work</span>
+        <span class="section-label" data-lang="ja">制作実績</span>
+        <h2 class="section-title" data-lang="en">Projects</h2>
+        <h2 class="section-title" data-lang="ja">制作物</h2>
+      </div>
+
+      <!-- Featured -->
+      <div class="projects-featured reveal">
+        <div class="project-card featured">
+          <div class="project-body">
+            <div class="project-number" data-lang="en">01 — Featured</div>
+            <div class="project-number" data-lang="ja">01 — 注目作品</div>
+            <div class="project-name">PokeAPI</div>
+            <p class="project-desc" data-lang="en">
+              A full-stack Pokédex application. Browse, search, filter and sort all 151 Generation 1 Pokémon. Spring Boot GraphQL backend, React SSR frontend, fully containerized with Docker and deployed on Railway.
+            </p>
+            <p class="project-desc" data-lang="ja">
+              フルスタックのポケモン図鑑アプリ。第1世代151匹のポケモンを検索・絞り込み・並び替えできます。バックエンドはSpring Boot GraphQL、フロントエンドはReact SSR、Dockerでコンテナ化してRailwayにデプロイしています。
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">GraphQL</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">SSR</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">Railway</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://poke-api-admigi.up.railway.app" target="_blank" rel="noopener noreferrer" class="project-link demo" data-lang="en">Live Demo ↗</a>
+            <a href="https://poke-api-admigi.up.railway.app" target="_blank" rel="noopener noreferrer" class="project-link demo" data-lang="ja">デモを見る ↗</a>
+            <a href="https://github.com/Admigi/PokeAPI" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-column row -->
+      <div class="projects-row">
+
+        <!-- Nakamap -->
+        <div class="project-card reveal">
+          <div class="project-number">02</div>
+          <div class="project-name">Nakamap</div>
+          <p class="project-desc" data-lang="en">
+            An interactive web app for exploring Japan's cultural heritage, historical sites, and natural beauty. Built as a team project during bootcamp.
+          </p>
+          <p class="project-desc" data-lang="ja">
+            日本の文化遺産・歴史的名所・自然の美しさを探索するインタラクティブなWebアプリ。ブートキャンプでのチームプロジェクトとして開発しました。
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Ruby</span>
+            <span class="project-tag">Ruby on Rails</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">PostgreSQL</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/Admigi/Nakamap" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- CashCard -->
+        <div class="project-card reveal">
+          <div class="project-number">03</div>
+          <div class="project-name">CashCard API</div>
+          <p class="project-desc" data-lang="en">
+            A RESTful API for managing family cash cards. Features CRUD operations, Spring Security auth, OpenAPI docs, Docker support, and a full CI pipeline.
+          </p>
+          <p class="project-desc" data-lang="ja">
+            家族向けキャッシュカード管理REST API。CRUD操作・Spring Security認証・OpenAPIドキュメント・Docker対応・CI/CDパイプライン完備。
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Spring Boot</span>
+            <span class="project-tag">Spring Security</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/Admigi/Cashcard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Asteroid Game -->
+        <div class="project-card reveal">
+          <div class="project-number">04</div>
+          <div class="project-name">Asteroid Game</div>
+          <p class="project-desc" data-lang="en">
+            A retro-style asteroid shooter built with JavaFX. Explores game loop mechanics, collision detection, and 2D rendering in Java.
+          </p>
+          <p class="project-desc" data-lang="ja">
+            JavaFXで作ったレトロスタイルのシューティングゲーム。ゲームループ・当たり判定・Javaでの2Dレンダリングを実装したサイドプロジェクト。
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">JavaFX</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/Admigi/AsteroidGame" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-lang="en">Get in touch</span>
+        <span class="section-label" data-lang="ja">お気軽にどうぞ</span>
+        <h2 class="section-title" data-lang="en">Contact</h2>
+        <h2 class="section-title" data-lang="ja">お問い合わせ</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-intro reveal">
+          <p data-lang="en">
+            I'm currently open to new opportunities. Whether you have a project in mind, a question, or just want to say hello — feel free to reach out!
+          </p>
+          <p data-lang="ja">
+            現在、新しい機会を積極的に探しています。プロジェクトのご相談、ご質問、またはただご挨拶でも、お気軽にご連絡ください！
+          </p>
+        </div>
+        <form
+          class="contact-form reveal"
+          action="https://formspree.io/f/maqaonoa"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name" data-lang="en">Name</label>
+              <label for="contact-name" data-lang="ja">お名前</label>
+              <input id="contact-name" type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" data-lang="en">Email</label>
+              <label for="contact-email" data-lang="ja">メールアドレス</label>
+              <input id="contact-email" type="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" data-lang="en">Message</label>
+            <label for="contact-message" data-lang="ja">メッセージ</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span data-lang="en">Send message →</span>
+            <span data-lang="ja">送信する →</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">
+      <span data-lang="en">© 2026 Clement Duval. Built with HTML, CSS & JS.</span>
+      <span data-lang="ja">© 2026 Clement Duval. HTML・CSS・JSで構築。</span>
+    </p>
+    <div class="footer-links">
+      <a href="https://github.com/Admigi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/clément-duval" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
