@@ -910,7 +910,7 @@ body.ja span,
 body.ja li {
   word-break: keep-all;
   word-break: auto-phrase;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   line-break: strict;
 }
 
