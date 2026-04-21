@@ -69,7 +69,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
-  width: 100%;
 }
 
 /* Noise texture */
@@ -476,6 +475,8 @@ section { position: relative; z-index: 1; }
 .about-meta-item span {
   color: var(--text);
   font-weight: 500;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .skills-grid {
@@ -583,6 +584,7 @@ section { position: relative; z-index: 1; }
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
 }
 
 .project-number {
@@ -917,7 +919,6 @@ body.ja .mobile-menu a[data-lang="ja"] { display: block; }
 body.ja p,
 body.ja h1,
 body.ja h2,
-body.ja span,
 body.ja li {
   word-break: keep-all;
   word-break: auto-phrase;
@@ -925,10 +926,3 @@ body.ja li {
   line-break: strict;
 }
 
-body.ja .about-text,
-body.ja .skills-grid,
-body.ja .project-card,
-body.ja .contact-intro,
-body.ja .hero-content {
-  min-width: 0;
-}
