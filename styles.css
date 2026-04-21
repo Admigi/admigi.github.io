@@ -915,6 +915,14 @@ body.ja .mobile-menu a[data-lang="ja"] { display: block; }
   .project-card.featured .project-links { flex-direction: column; }
 }
 
+body.ja .about-text,
+body.ja .skills-grid,
+body.ja .project-card,
+body.ja .contact-intro,
+body.ja .hero-content {
+  min-width: 0;
+}
+
 /* For Japanese text */
 body.ja p,
 body.ja h1,
