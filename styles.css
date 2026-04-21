@@ -928,7 +928,6 @@ body.ja p,
 body.ja h1,
 body.ja h2,
 body.ja li {
-  word-break: keep-all;
   word-break: auto-phrase;
   overflow-wrap: break-word;
   line-break: strict;
